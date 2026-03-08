@@ -1,0 +1,15 @@
+resources:
+  - ../../apps/nginx/deployment.yaml
+  - ../../apps/nginx/service.yaml
+  - ../../apps/nginx/route.yaml
+
+namespace: demo-stage
+
+patches:
+  - target:
+      kind: Deployment
+      name: nginx
+    patch: |-
+      - op: replace
+        path: /spec/replicas
+        value: 2

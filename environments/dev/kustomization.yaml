@@ -1,0 +1,6 @@
+resources:
+  - ../../apps/nginx/deployment.yaml
+  - ../../apps/nginx/service.yaml
+  - ../../apps/nginx/route.yaml
+
+namespace: demo
