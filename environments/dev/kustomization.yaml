@@ -3,4 +3,4 @@ resources:
   - ../../apps/nginx/service.yaml
   - ../../apps/nginx/route.yaml
 
-namespace: demo
+namespace: bishoy
