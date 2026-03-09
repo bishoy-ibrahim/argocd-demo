@@ -5,16 +5,13 @@ metadata:
   namespace: openshift-gitops
 spec:
   project: demo-project
-
   source:
-    repoURL: https://github.com/bishoy-ibrahim/gitops-repo
+    repoURL: https://github.com/bishoy-ibrahim/argocd-demo
     targetRevision: HEAD
     path: environments/dev
-
   destination:
     server: https://kubernetes.default.svc
     namespace: demo
-
   syncPolicy:
     automated:
       prune: true
