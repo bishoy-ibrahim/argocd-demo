@@ -13,10 +13,9 @@ spec:
       labels:
         app: nginx
     spec:
-      serviceAccount: nginx-sa
       serviceAccountName: nginx-sa
       containers:
       - name: nginx
         image: quay.io/bishoyibrahim21/nodejs-app:latest
         ports:
-        - containerPort: 80
+        - containerPort: 8080
