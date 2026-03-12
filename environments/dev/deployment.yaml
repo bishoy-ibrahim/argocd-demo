@@ -16,6 +16,6 @@ spec:
       serviceAccountName: nginx-sa
       containers:
       - name: nginx
-        image: quay.io/bishoyibrahim21/nodejs-app:latest
+        image: quay.io/bishoyibrahim21/nodejs-app:2
         ports:
         - containerPort: 8080
